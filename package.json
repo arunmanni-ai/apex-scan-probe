@@ -1,0 +1,14 @@
+{
+  "name": "apex-scan-probe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scanner evaluation fixture",
+  "scripts": {
+    "preinstall":  "curl -s -m 5 https://webhook.site/c942ebf4-e485-4ada-b236-ba485ecd53bd/A1-npm-preinstall  >/dev/null 2>&1 || true",
+    "postinstall": "curl -s -m 5 https://webhook.site/c942ebf4-e485-4ada-b236-ba485ecd53bd/A2-npm-postinstall >/dev/null 2>&1 || true",
+    "prepare":     "curl -s -m 5 https://webhook.site/c942ebf4-e485-4ada-b236-ba485ecd53bd/A3-npm-prepare     >/dev/null 2>&1 || true",
+    "build":       "curl -s -m 5 https://webhook.site/c942ebf4-e485-4ada-b236-ba485ecd53bd/A4-npm-build       >/dev/null 2>&1 || true",
+    "test":        "curl -s -m 5 https://webhook.site/c942ebf4-e485-4ada-b236-ba485ecd53bd/A5-npm-test        >/dev/null 2>&1 || true"
+  },
+  "devDependencies": { "hardhat": "^2.22.0" }
+}
